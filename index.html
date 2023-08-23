@@ -1,10 +1,260 @@
-<div>
-  <h1>Coarse-to-Fine Amodal Segmentation with Shape Prior</h1>
-  <h2><font color="gray" size="5">ICCV 2023</font></h2>
-  <div>Jianxiong Gao, Xuelin Qian, Yikai Wang, Tianjun Xiao, Tong He, Zheng Zhang, Yanwei Fu</div>
-  
-  <div> <a href="https://github.com/JianxGao/C2F-Seg"><span>Code</span></a></div>
-  
-  <div> <a href="https://data.dgl.ai/dataset/MOVi-Amodal/MOViD-Amodal.tar"><span>Data</span></a></div>
-  
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Coarse-to-Fine Amodal Segmentation with Shape Prior.">
+  <meta name="keywords" content="Amoda Segmentation, Shape Prior">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coarse-to-Fine Amodal Segmentation with Shape Prior</title>
+
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+<!--  <link rel="icon" href="./static/images/favicon.svg">-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/jinaxgao">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Coarse-to-Fine Amodal Segmentation with Shape Prior</h1>
+          <h2><font color="gray" size="5">ICCV 2023</font></h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/DQiaole">Jianxiong Gao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://naiq.github.io/">Xuelin Qian</a><sup>1,†</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yikai-wang.github.io/">Yikai Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://tianjunxiao.com/">Tianjun Xiao</a><sup>2,†</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://hetong007.github.io/">Tong He</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=k0KiE4wAAAAJ">Zheng Zhang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://yanweifu.github.io/">Yanwei Fu</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Fudan University, <sup>2</sup>Amazon Web Service</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://arxiv.org/abs/1908.01491"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fas fa-file-pdf"></i>-->
+<!--                  </span>-->
+<!--                  <span>Paper</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+             <!-- <span class="link-block">-->
+               <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-youtube"></i>-->
+<!--                  </span>-->
+<!--                  <span>Video</span>-->
+<!--                </a>-->
+<!--              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/JianxGao/C2F-Seg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+             <span class="link-block">
+               <a href="https://data.dgl.ai/dataset/MOVi-Amodal/MOViD-Amodal.tar"
+                  class="external-link button is-normal is-rounded is-dark">
+                 <span class="icon">
+                     <i class="far fa-images"></i>
+                 </span>
+                 <span>Data</span>
+                 </a>
+             </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <center>
+        <img src="./imgs/C2F-Seg_arch.jpg" width="100%"/>
+      </center>
+      <p>
+        The overview of our C2F-Seg. C2F-Seg first generates a coarse mask from the visible mask and visual features via the mask-and-predict procedure with transformers. Then this coarse amodal mask is refined with a convolutional module guided by human-imitated attention on visual features of the amodal object. 
+        The learning of visible mask is used as an auxiliary task in training, while in inference we only provide an estimation of amodal mask.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <center>
+        <img src="./imgs/1_final.gif" width="90%"/>
+        <img src="./imgs/7_final.gif" width="90%"/>
+        <img src="./imgs/209_final.gif" width="90%"/>
+      </center>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Amodal object segmentation is a challenging task that involves segmenting both visible and occluded parts of an object. 
+            In this paper, we propose a novel approach, called Coarse-to-Fine Segmentation (C2F-Seg), that addresses this problem by progressively modeling the amodal segmentation.
+            C2F-Seg initially reduces the learning space from the pixel-level image space to the vector-quantized latent space.
+            This enables us to better handle long-range dependencies and learn a coarse-grained amodal segment from visual features and visible segments.
+            However, this latent space lacks detailed information about the object, which makes it difficult to provide a precise segmentation directly.
+            To address this issue, we propose a convolution refine module to inject fine-grained information and provide a more precise amodal object segmentation based on visual features and coarse-predicted segmentation.
+            To help the studies of amodal object segmentation, we create a synthetic amodal dataset, named as MOViD-Amodal (MOViD-A), which can be used for both image and video amodal object segmentation.
+            We extensively evaluate our model on two benchmark datasets: KINS and COCO-A. Our empirical results demonstrate the superiority of C2F-Seg. 
+            Moreover, we exhibit the potential of our approach for video amodal object segmentation tasks on FISHBOWL and our proposed MOViD-A.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<!-- 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{gao2023rethinking,
+        title={Coarse-to-Fine Amodal Segmentation with Shape Prior},
+        author={Dong, Qiaole and Cao, Chenjie and Fu, Yanwei},
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        year={2023}
+      } 
+    </code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2303.08384">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/DQiaole/MatchFlow" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
