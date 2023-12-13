@@ -6,7 +6,7 @@
 C2F-Seg is a framework designed for amodal segementation. It first generates a coarse mask from the visible mask and visual features via the mask-and-predict procedure with transformers. Then this coarse amodal mask is refined with a convolutional module guided by human-imitated attention on visual features of the amodal object. The learning of visible mask is used as an auxiliary task in training, while in inference we only provide an estimation of amodal mask.
 # MOViD-Amodal
 
-You can download the dataset from this [link](https://data.dgl.ai/dataset/MOVi-Amodal/MOViD-Amodal.tar)
+You can download the dataset from this [link](https://data.dgl.ai/dataset/MOVi-Amodal/MOViD-Amodal.tar).
 
 Exmaple:
 <img src="./imgs/example.gif" width="100%">
