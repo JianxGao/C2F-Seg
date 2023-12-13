@@ -8,31 +8,9 @@ C2F-Seg is a framework designed for amodal segementation. It first generates a c
 
 You can download the dataset from this [link](https://data.dgl.ai/dataset/MOVi-Amodal/MOViD-Amodal.tar)
 
-
-
-<!-- <div>
 Exmaple:
-<center>
-<div>
-    <div style="width:16%"> <img src="./imgs/image.gif"/> <center>Image</center></div>
-    <div style="width:16%"> <img src="./imgs/mask.gif"/> <center>Mask</center></div>
-    <div style="width:16%"> <img src="./imgs/flow.gif"/> <center>Optical Flow</center> </div>
-    <div style="width:16%"> <img src="./imgs/depth.gif"/> <center>Depth</center></div>
-    <div style="width:16%"> <img src="./imgs/bev_image.gif"/> <center>BEV Image</center></div>
-    <div style="width:16%"> <img src="./imgs/bev_mask.gif"/> <center>BEV Mask</center></div>
-</div>
-</center>
-</div> -->
+<img src="./imgs/example.gif" width="100%">
 
-Exmaple:
-<div class="image-container">
-    <div class="image-box"> <img src="./imgs/image.gif"     alt="Image"> <p>Image</p> </div>
-    <div class="image-box"> <img src="./imgs/mask.gif"      alt="Mask"> <p>Mask</p> </div>
-    <div class="image-box"> <img src="./imgs/flow.gif"      alt="Optical Flow"> <p>Optical Flow</p> </div>
-    <div class="image-box"> <img src="./imgs/depth.gif"     alt="Depth"> <p>Depth</p> </div>
-    <div class="image-box"> <img src="./imgs/bev_image.gif" alt="BEV Image"> <p>BEV Image</p> </div>
-    <div class="image-box"> <img src="./imgs/bev_mask.gif"  alt="BEV Mask"> <p>BEV Mask</p> </div>
-</div>
 
 
 
