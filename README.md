@@ -10,7 +10,7 @@ You can download the dataset from this [link](https://data.dgl.ai/dataset/MOVi-A
 
 
 
-<div>
+<!-- <div>
 Exmaple:
 <center>
 <div>
@@ -22,7 +22,18 @@ Exmaple:
     <div style="width:16%"> <img src="./imgs/bev_mask.gif"/> <center>BEV Mask</center></div>
 </div>
 </center>
+</div> -->
+
+Exmaple:
+<div class="image-container">
+    <div class="image-box"> <img src="./imgs/image.gif"     alt="Image"> <p>Image</p> </div>
+    <div class="image-box"> <img src="./imgs/mask.gif"      alt="Mask"> <p>Mask</p> </div>
+    <div class="image-box"> <img src="./imgs/flow.gif"      alt="Optical Flow"> <p>Optical Flow</p> </div>
+    <div class="image-box"> <img src="./imgs/depth.gif"     alt="Depth"> <p>Depth</p> </div>
+    <div class="image-box"> <img src="./imgs/bev_image.gif" alt="BEV Image"> <p>BEV Image</p> </div>
+    <div class="image-box"> <img src="./imgs/bev_mask.gif"  alt="BEV Mask"> <p>BEV Mask</p> </div>
 </div>
+
 
 
 
@@ -43,5 +54,19 @@ If you find our paper useful for your research and applications, please cite usi
 ```
 
 <style type="text/css">
-	 div {float:left; display:inline; margin:1px;}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-box {
+    width: 16.6%; /* Adjust width according to your needs */
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
 </style>
