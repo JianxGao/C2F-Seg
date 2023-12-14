@@ -30,21 +30,3 @@ If you find our paper useful for your research and applications, please cite usi
   year={2023}
 }
 ```
-
-<style type="text/css">
-.image-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.image-box {
-    width: 16.6%; /* Adjust width according to your needs */
-    text-align: center;
-}
-
-.image-box img {
-    width: 100%;
-    height: auto;
-}
-
-</style>
